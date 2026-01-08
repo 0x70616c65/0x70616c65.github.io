@@ -6,6 +6,16 @@
     <title>hexovrite companion</title>
   </head>
   <body>
+    <button id="fullscreenBtn">На весь экран</button>
     <p>Hexovrite Companion</p>
   </body>
+  <scrip>
+    document.getElementById("fullscreenBtn").addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+  </scrip>
 </html>
