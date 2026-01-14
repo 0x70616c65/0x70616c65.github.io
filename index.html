@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hexovrite companion</title>
-  </head>
-  <body>
-    <p>Hexovrite Companion</p>
-    <button id="fullscreenBtn">Fullscreen</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/icon1/16.png" id="favicon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hexovrite companion</title>
 
   <script>
-    document.getElementById("fullscreenBtn").addEventListener("click", () => {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-      } else {
-        document.exitFullscreen();
-      }
-    })
+    const num = Math.floor(new Date().getMinutes() + 1) % 2;
+    document.getElementById('favicon').href = `/icon/${num}/16.png`;
   </script>
-  </body>
+  <script type="module" crossorigin src="/assets/index-CaBtv626.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-AFikTIlQ.css">
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>
